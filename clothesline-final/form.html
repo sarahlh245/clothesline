@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>form</title>
+</head>
+<style>
+    .contactform {
+            max-width: 1000px;
+            position: absolute;
+            margin-left: 85px;
+            font-family: "Bebas Kai";
+            font-style: normal;
+            font-weight: normal;
+            font-size: 20px;
+            background-color: #E4EFF4;
+            margin-top: 60px;
+            padding: 20px;
+    }
+    a:link {
+            text-decoration: none;
+            color: #ffffff;
+    }
+
+    a:visited {
+            text-decoration: none;
+            color: #ffffff;
+    }
+
+    a:hover {
+            text-decoration: none;
+            color: #E2F6FF;
+    }
+
+    input[type=text], select {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+    }
+
+    input[type=submit] {
+            width: 100%;
+            background-color: #000000;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+    }
+
+    input[type=submit]:hover {
+            background-color: #95c0d3;
+    }
+</style>
+<body>
+
+<div class="contactform">
+    <h2 class="contact1">Feel Free to Contact Us</h2>
+    <form action="/action_page.php">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname">
+
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname">
+
+            <label for="email">Email Address</label>
+            <input type="text" id="email" name="email">
+
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject">
+
+            <label for="message">Message</label>
+            <input type="text" id="message" name="message">
+
+            </select>
+        <input type="submit"value="Submit">
+    </form>
+</div>
+</body>
+</html>

@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tendedero</title>
+    <link rel="shortcut icon" href="favicon.ico?"/>
+</head>
+<style>
+    * {
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        background-color: lightblue;
+    }
+
+    .container {
+        width: 1180px;
+        height: 3200px;
+        background-color: white;
+        position: relative;
+        margin: 0 auto;
+        color: white;
+        text-align: center;
+        padding-top: 130px;
+    }
+
+    .logo {
+        position: relative;
+        margin-top: -100px;
+
+    }
+
+    .landromat {
+        font-family: Avenir;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 25px;
+        margin-right: 50px;
+        margin-top: -30px;
+        margin-bottom: 25px;
+        color: #000000;
+        padding-left: 450px;
+
+    }
+
+    .buttons {
+        border: 10px solid lightblue;
+        width: 1180px;
+        margin-right: 100px;
+    }
+
+    nav {
+        width: 1180px;
+        height: 50px;
+        position: absolute;
+        background-color: lightblue;
+        margin: 0 auto;
+    }
+
+    #nav-section-01, #nav-section-02, #nav-section-03, #nav-section-04 {
+        display: inline;
+        font-size: 24px;
+        font-family: Avenir;
+        font-weight: bold;
+        padding: 0 25px;
+    }
+
+    a:link {
+        text-decoration: none;
+        color: black;
+    }
+
+    a:visited {
+        text-decoration: none;
+        color: white;
+    }
+
+    a:hover {
+        text-decoration: none;
+        color: darkslategray;
+    }
+
+    a:hover {
+        cursor: grab;
+    }
+
+    .text {
+        position: absolute;
+        width: 830px;
+        height: 200px;
+        margin-left: 150px;
+        color: black;
+        font-family: Avenir;
+    }
+
+    .t1 {
+        font-family: Avenir;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 31px;
+        padding-bottom: 30px;
+        margin-top: 70px;
+    }
+
+    .par1 {
+        font-family: Avenir;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 31px;
+    }
+
+    .location {
+        font-family: Avenir;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 31px;
+        color: black;
+        padding-top: 30px;
+    }
+
+    .addy {
+        font-family: Avenir;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 31px;
+        color: black;
+        padding-top: 30px;
+    }
+
+    .phone {
+        font-family: Avenir;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 31px;
+        color: black;
+        padding-top: 30px;
+    }
+
+    .hours {
+        font-family: Avenir;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 31px;
+        color: black;
+        padding-top: 30px;
+    }
+
+    .languages {
+        font-family: Avenir;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 19px;
+        color: #000000;
+        width: 200px;
+        height: 20px;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+    .column {
+        float: left;
+        width: 33.33%;
+        padding: 5px;
+    }
+
+    .row::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+    .row {
+        padding-top: 140px;
+        margin-top: 70px;
+    }
+    .icons{
+        position:absolute;
+        width: 500px;
+        height: 147px;
+        margin-top:700px;
+        margin-left: 90px;
+    }
+    .contactform {
+        max-width: 1000px;
+        position: absolute;
+        margin-left: 90px;
+        font-family: Avenir;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        background-color:lightblue;
+        margin-top: 60px;
+        padding: 20px;
+    }
+
+    a:link {
+        text-decoration: none;
+        color: #ffffff;
+    }
+
+    a:visited {
+        text-decoration: none;
+        color: black;
+    }
+
+    a:hover {
+        text-decoration: none;
+        color: darkgray;
+    }
+
+    input[type=text], select {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+    input[type=submit] {
+        width: 100%;
+        background-color: #000000;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    input[type=submit]:hover {
+        background-color: darkgray;
+    }
+    .thanks{
+        text-align: right;
+    }
+    .amenitiespar1 {
+        font-family: Avenir;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 40px;
+        color: #000000;
+        margin-top: 850px;
+    }
+
+    .utlities {
+        position: absolute;
+        width: 130px;
+        height: 28px;
+        font-family: Avenir;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 25px;
+        line-height: 33px;
+        color: #000000;
+        margin-top: 50px;
+        margin-left: 150px;
+    }
+
+    .purchase {
+        position: absolute;
+        width: 130px;
+        height: 28px;
+        font-family: Avenir;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 25px;
+        line-height: 33px;
+        color: #000000;
+        margin-top: 50px;
+        margin-left: 500px;
+    }
+
+    .food {
+        position: absolute;
+        width: 500px;
+        height: 100px;
+        font-family: Avenir;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 25px;
+        line-height: 33px;
+        color: #000000;
+        margin-left: 700px;
+        margin-top: 50px;
+    }
+
+    .utlitiespar {
+        font-family: Avenir;
+        font-style: normal;
+        font-weight: lighter;
+        font-size: 20px;
+        line-height: 26px;
+        text-align: left;
+        color: #000000;
+        width: 323px;
+        height: 269px;
+        margin-top: 100px;
+        margin-left: 40px;
+        margin-top: 90px;
+    }
+
+    .purchasepar {
+        font-family: Avenir;
+        font-style: normal;
+        font-weight: lighter;
+        font-size: 20px;
+        line-height: 26px;
+        text-align: left;
+        color: #000000;
+        width: 323px;
+        height: 269px;
+        margin-top: -270px;
+        margin-left: 410px;
+    }
+
+    .foodpar {
+        font-family: Avenir;
+        font-style: normal;
+        font-weight: lighter;
+        font-size: 20px;
+        line-height: 26px;
+        text-align: left;
+        color: #000000;
+        width: 323px;
+        height: 269px;
+        margin-top: -270px;
+        margin-left: 800px;
+    }
+    .scroll{
+        text-align: center;
+        font-family: Avenir;
+    }
+</style>
+<body>
+
+<div class="container">
+    <div class="logo"><img src="clothesline_logo_the_one.gif" height="126" width="700"/>
+        <h2 class="landromat">LAVANDERIA</h2>
+    </div>
+
+    <nav>
+        <div class="buttons">
+            <a href="#section-01"><p id="nav-section-01">CASA</p></a>
+            <a href="#section-02"><p id="nav-section-02">UBICACIÓN</p></a>
+            <a href="#section-03"><p id="nav-section-03">CONTACTO</p></a>
+            <a href="#section-04"><p id="nav-section-04">
+                COMODIDADES</p></a>
+        </div>
+    </nav>
+
+
+    <section><p id="section-01">CASA</p></section>
+
+    <div class="text">
+        <h2 class="t1">
+            ¡Bienvenido a Clothesline!</h2>
+        <p class="par1">
+            Clothesline se encuentra en West St. Paul, cerca de El Destino. Proporcionamos
+            un seguro y confortable ambiente para los clientes mientras lavan y secan la ropa.</p>
+    </div>
+
+    <div class="row">
+        <div class="column">
+            <img src="washer_1.png" alt="washer1" style="width:100%">
+        </div>
+        <div class="column">
+            <img src="washer_2.png" alt="washer2" style="width:100%">
+        </div>
+        <div class="column">
+            <img src="washer_3.png" alt="washer3" style="width:100%">
+        </div>
+        <div class="column">
+            <img src="washer_4.png" alt="washer1" style="width:100%">
+        </div>
+        <div class="column">
+            <img src="washer_5.png" alt="washer1" style="width:100%">
+        </div>
+        <div class="column">
+            <img src="washer_6.png" alt="washer1" style="width:100%">
+        </div>
+    </div>
+
+    <section><p id="section-02">UBICACIÓN</p></section>
+
+    <h2 class="location">
+        Dónde puedes encontrarnos:</h2>
+    <h2>Google Maps</h2>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2826.58340877945!2d-93.07176648413966!3d44.891126179098336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87f7d49a54419b3d%3A0x62fba43bfb729758!2sClothesline%20Laundromat!5e0!3m2!1sen!2sus!4v1572467375625!5m2!1sen!2sus"
+            width="1000" height="500" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+    <p class="addy">1823 Oakdale Ave in West St. Paul, Minnesota 55118</p>
+    <p class="phone">Telephone Numero : 651-925-6611</p>
+    <p class="hours">Abierto todos los días de 6:00 a.m. a 11:00 p.m.</p>
+
+    <section><p id="section-03">CONTACT</p></section>
+    <h2 class="location">Preguntas? Comentarios? Preocupaciones?</h2>
+    <div class="contactform">
+        <form action="/action_page.php">
+            <label for="fname">
+            Primer nombre:</label>
+            <input type="text" id="fname" name="firstname">
+
+            <label for="lname">
+            Apellido:</label>
+            <input type="text" id="lname" name="lastname">
+
+            <label for="email">Dirección de correo electrónico:</label>
+            <input type="text" id="email" name="email">
+
+            <label for="subject">Tema:</label>
+            <input type="text" id="subject" name="subject">
+
+            <label for="message">Mensaje:</label>
+            <input type="text" id="message" name="message">
+
+            <input type="submit" value="Submit">
+            <h2 class="thanks">¡Gracias por contactarnos!<br>Estaremos en contacto en breve.</h2>
+        </form>
+    </div></section>
+
+    <section><p>AMENITIES</p>
+        <div class="icons">
+            <div id="section-04"></div>
+        <img src="logos.png" height="137" width="1000"/>
+    </div>
+    <h2 class="amenitiespar1">
+        Lo Que Tenemos Para Ofrecer:</h2>
+    <p class="utlities">UTILIDADES</p>
+    <p class="purchase">COMPRA:</p>
+    <p class="food">
+        ALIMENTOS Y ELECTRONICA:</p>
+    <p class="utlitiespar">La lavandería de tendedero ofrece a los usuarios más grandes
+        Lavadoras y secadoras de capacidad con aire acondicionado para mantenerse fresco.
+        La lavandería de tendedero se preocupa por su comodidad, por eso nuestro
+        La principal prioridad es mantener un ambiente limpio y seguro.
+        Clothesline también tiene cámaras seguras para proteger sus pertenencias y seguridad.</p>
+    <p class="purchasepar">
+        ¿No estás seguro de cómo pagar? No se preocupe, excepto las múltiples opciones de compra.
+        Lavandería con tendedero, excepto las tarjetas de crédito y débito.
+        Tenemos un cajero automático en funcionamiento ubicado dentro de la lavandería.</p>
+    <p class="foodpar"> En cuanto al uso electrónico, la lavandería Clothesline ofrece acceso gratuito a WIFI y TV.
+        El tendedero también tiene máquinas de venta en caso de que tengas hambre.
+        El tendedero también se encuentra al lado del mercado de El Destino.</p>
+<!end of wrapper->
+<script>
+    $(document).ready(function () {
+// Add smooth scrolling to all links
+        $("a").on('click', function (event) {
+
+// Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+// Prevent default anchor click behavior
+                event.preventDefault();
+
+// Store hash
+                var hash = this.hash;
+
+// Using jQuery's animate() method to add smooth page scroll
+// The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 800, function () {
+
+// Add hash (#) to URL when done scrolling (default click behavior)
+                    window.location.hash = hash;
+                });
+            } // End if
+        });
+    });
+</script>
+<div><!--end of container-->
+<a href="#top"><p class="scroll">VUELVE AL COMIENZO</p></a>
+<div class="languages">
+        <a class="el" href="clothesline_langauge_page.html">English</a>
+        <a class="en" href="clothesline_langauge_page.html">Español</a>
+</div>
+
+    <body>
+</html>
